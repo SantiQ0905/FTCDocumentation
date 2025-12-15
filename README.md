@@ -1,381 +1,315 @@
-# Documentaci�n Completa de FTC
+﻿# 📚 Documentación Completa de FTC en Español
 
-**FIRST Tech Challenge - Gu�a Integral en Espa�ol**
-
-Esta documentaci�n cubre todos los aspectos esenciales de FTC: sistema de control, programaci�n, sistema el�ctrico, y librer�as externas avanzadas como FTCLib, NextFTC, y Pedro Pathing.
+Guía integral sobre FIRST Tech Challenge: sistema de control, programación, Sistema Eléctrico, y Librerías Avanzadas.
 
 ---
 
-## =� Tabla de Contenidos
+## 📖 ¿Qué encontrarás aquí?
 
-### [1. Introducci�n](#1-introducci�n-a-ftc)
-### [2. Sistema de Control](#2-sistema-de-control)
-### [3. Programaci�n](#3-programaci�n)
-### [4. Sistema El�ctrico](#4-sistema-el�ctrico)
-### [5. FTCLib](#5-ftclib---librer�a-avanzada)
-### [6. NextFTC](#6-nextftc---framework-moderno)
-### [7. Pedro Pathing](#7-pedro-pathing---path-following)
-### [8. Recursos Adicionales](#8-recursos-adicionales)
+Esta documentación cubre **todos los aspectos esenciales** para competir en FTC, desde los conceptos básicos hasta técnicas avanzadas:
 
----
-
-## 1. Introducci�n a FTC
-
-### Fundamentos
-
-- **[�Qu� es FTC?](./01_Introduccion/que-es-ftc.md)**
-  - Objetivos del programa
-  - Estructura de la competencia (Autonomous + TeleOp)
-  - Valores de FIRST
-  - Temporada competitiva
-  - Premios y oportunidades
-
-- **[Componentes B�sicos](./01_Introduccion/componentes-basicos.md)**
-  - Control Hub y Expansion Hub
-  - Driver Station
-  - Motores DC y servos
-  - Sensores (color, distancia, IMU, t�ctiles)
-  - C�maras y visi�n por computadora
-  - Sistemas de construcci�n (REV, goBILDA, TETRIX)
-  - Gamepad y controladores
-  - Herramientas esenciales
-
-- **[Configuraci�n Inicial](./01_Introduccion/configuracion-inicial.md)**
-  - Actualizaci�n de software
-  - Conexi�n de hardware
-  - Configuraci�n del hardware en el robot
-  - Instalaci�n del SDK (Blocks, OnBot Java, Android Studio)
-  - Crear y ejecutar tu primer OpMode
-  - Troubleshooting com�n
+- 🎮 Sistema de control (Control Hub, Driver Station)
+- 💻 Programación (Blocks, Java, Android Studio)
+- ⚡ Hardware y Sistema Eléctrico
+- 📦 Librerías Avanzadas (FTCLib, NextFTC, Pedro Pathing)
+- 📝 Ejemplos de código completos
+- 🔧 Troubleshooting y mejores prácticas
 
 ---
 
-## 2. Sistema de Control
+## 🚀 Inicio rápido
 
-### Hardware de Control
+### Paso 1: Abre el Índice Principal
 
-- **[Control Hub](./02_Sistema_Control/control-hub.md)**
-  - Especificaciones t�cnicas (Snapdragon 845, puertos I/O)
-  - Arquitectura del sistema
-  - Configuraci�n y uso
-  - Calibraci�n de IMU integrada
-  - Actualizaci�n de firmware
-  - Programaci�n del Control Hub
-  - Diagn�stico y troubleshooting
-  - LEDs de estado
+**📍 Empieza aquí: [INTRO_INDICE.md](./INTRO_INDICE.md)**
 
-- **[Expansion Hub](./02_Sistema_Control/expansion-hub.md)**
-  - Diferencias con Control Hub
-  - Conexi�n mediante RS485
-  - Configuraci�n de hardware
-  - Alimentaci�n (bater�a separada vs compartida)
-  - Consideraciones de latencia
-  - Troubleshooting de comunicaci�n
+El Índice principal contiene:
+- Tabla de contenidos completa con hipervínculos
+- Descripción de cada sección
+- Enlaces rápidos por nivel de experiencia
+- Recursos oficiales y de la comunidad
 
-- **[Driver Station](./02_Sistema_Control/driver-station.md)**
-  - Requisitos del dispositivo
-  - Interfaz de usuario
-  - Configuraci�n de Wi-Fi y gamepads
-  - Telemetr�a avanzada
-  - Uso durante competencias (Autonomous y TeleOp)
-  - Troubleshooting de conexi�n
+### Paso 2: Elige tu Ruta de Aprendizaje
 
-- **[Comunicaciones](./02_Sistema_Control/comunicaciones.md)**
-  - Arquitectura de comunicaci�n (Wi-Fi Direct, RS485)
-  - Configuraci�n de Wi-Fi (bandas, canales, contrase�as)
-  - Optimizaci�n de conexi�n
-  - Verificar calidad de se�al
-  - Troubleshooting de lag y desconexiones
-  - Seguridad y reglas de competencia
-  - Herramientas avanzadas (ADB, Network Analyzer)
+####  Nuevo en FTC (Principiante)
 
----
+Sigue este orden:
 
-## 3. Programaci�n
+1. **¿Qué es FTC?](./01_Introduccion/que-es-ftc.md)** - Entiende el programa y la competencia
+2. **[Componentes Básicos](./01_Introduccion/componentes-basicos.md)** - Conoce el Hardware
+3. **[Configuración Inicial](./01_Introduccion/configuracion-inicial.md)** - Configura tu primer robot
+4. **[Blocks Programming](./03_Programacion/blocks-programming.md)** - Programa sin escribir Código
 
-### Entornos de Desarrollo
+####  Equipo con Experiencia (Intermedio)
 
-- **[Blocks Programming](./03_Programacion/blocks-programming.md)**
-  - Programaci�n visual para principiantes
-  - Categor�as de bloques (Control, L�gica, Math, Hardware)
-  - Crear OpModes con bloques
-  - Hardware: motores, servos, sensores, gamepad
-  - Ejemplos completos (Tank Drive, Autonomous, Sensores)
-  - Limitaciones y cu�ndo cambiar a Java
+Enfcate en Estás secciones:
 
-- **[OnBot Java](./03_Programacion/onbot-java.md)**
-  - Editor Java basado en navegador
-  - Ventajas y desventajas
-  - Crear OpModes en Java
-  - Trabajar con hardware (motores, servos, sensores)
-  - Organizaci�n de c�digo (clases de hardware)
-  - Backup y control de versiones
-  - Comparaci�n con Android Studio
+1. **[Android Studio](./03_Programacion/android-studio.md)** - Desarrollo profesional
+2. **[Conceptos Básicos](./03_Programacion/conceptos-basicos.md)** - PID, state machines, odometría
+3. **[FTCLib](./05_FTCLib/introduccion-ftclib.md)** - Librería avanzada
+4. **[Pedro Pathing](./07_Pedro_Pathing/introduccion-pedro.md)** - Navegacin autónoma
 
-- **[Android Studio](./03_Programacion/android-studio.md)**
-  - Instalaci�n y configuraci�n
-  - Estructura del proyecto FtcRobotController
-  - Crear OpModes en Android Studio
-  - Caracter�sticas avanzadas (IntelliSense, debugging, Git)
-  - Instalar librer�as externas
-  - Mejores pr�cticas de desarrollo
-  - Troubleshooting de compilaci�n
+####  Preparación para Competencia (Todos los niveles)
 
-### Conceptos de Programaci�n
+Revisa Estás secciones críticas:
 
-- **[Estructura de OpModes](./03_Programacion/estructura-opmode.md)**
-  - LinearOpMode vs OpMode (Iterativo)
-  - Ciclo de vida de un OpMode
-  - Anotaciones (@TeleOp, @Autonomous, @Disabled)
-  - Elementos clave (hardwareMap, telemetry, gamepad)
-  - Patrones comunes (timeouts, state machines)
-  - �Cu�l usar?
-
-- **[Conceptos B�sicos](./03_Programacion/conceptos-basicos.md)**
-  - Control PID (Proporcional-Integral-Derivativo)
-  - State Machines (M�quinas de Estado)
-  - Odometr�a (seguimiento de posici�n)
-  - Modos de conducci�n (Tank, Arcade, Mecanum, Field-Centric)
-  - Programaci�n defensiva (try-catch, null checks)
-  - Optimizaci�n de performance
+1. **[Control Hub](./02_Sistema_Control/control-hub.md)** - Configura y diagnostica
+2. **[Comunicaciones](./02_Sistema_Control/comunicaciones.md)** - Optimiza Wi-Fi
+3. **[Sistema Eléctrico](./04_Sistema_Electrico/alimentación.md)** - Gestán de  Energía
+4. **[Driver Station](./02_Sistema_Control/driver-station.md)** - Uso durante partidos
 
 ---
 
-## 4. Sistema El�ctrico
+## 🧭 Cómo Navegar la Documentación
 
-### Energ�a y Cableado
+### Método 1: hipervínculos (Recomendado)
 
-- **[Alimentaci�n](./04_Sistema_Electrico/alimentacion.md)**
-  - Tipos de bater�as (NiMH, LiPo)
-  - Carga y mantenimiento
-  - Distribuci�n de energ�a (Control Hub, Expansion Hub)
-  - Gesti�n de corriente y l�mites
-  - C�digo para ramping de potencia
-  - Troubleshooting de voltaje
+Cada documento incluye enlaces de navegación:
 
-- **[Motores](./04_Sistema_Electrico/motores.md)**
-  - Motores comunes (REV HD Hex, Core Hex, goBILDA Yellow Jacket)
-  - C�lculos de encoder
-  - Modos de control (RUN_WITHOUT_ENCODER, RUN_USING_ENCODER, RUN_TO_POSITION)
-  - ZeroPowerBehavior (BRAKE vs FLOAT)
+```
+[⬅️ Anterior: Documento Previo] | [➡️ Siguiente: Documento Siguiente] | [🏠 Índice]
+```
 
-- **[Servos](./04_Sistema_Electrico/servos.md)**
-  - Servo est�ndar vs continuo
-  - Control de posici�n
-  - Movimiento gradual
-  - Gesti�n de corriente
+- **⬅️ Anterior**: Vuelve al documento previo
+- **➡️ Siguiente**: Avanza al siguiente documento
+- **🏠 Índice**: Regresa al Índice principal
 
-- **[Sensores](./04_Sistema_Electrico/sensores.md)**
-  - Color Sensor (REV V3)
-  - Distance Sensor
-  - IMU (BNO055)
-  - Touch Sensor
-  - Encoders externos para odometr�a
+### Método 2: Índice Principal
 
----
+El archivo **[INTRO_INDICE.md](./INTRO_INDICE.md)** contiene hipervínculos a **todos los documentos**, organizados por Categoría.
 
-## 5. FTCLib - Librer�a Avanzada
+### Método 3: Búsqueda por Carpeta
 
-### Introducci�n y Caracter�sticas
+Si sabesqué tema buscas:
 
-- **[Introducci�n a FTCLib](./05_FTCLib/introduccion-ftclib.md)**
-  - �Qu� es FTCLib?
-  - Instalaci�n (Gradle)
-  - Hardware Wrappers (Motor, MotorEx, SimpleServo)
-  - PID Controller integrado
-  - Drivetrain Classes (MecanumDrive, field-centric)
-  - Command-Based Programming
-  - Odometry
-  - Recursos y documentaci�n
+1. Identifica la carpeta correspondiente (ej. `03_Programacion/`)
+2. Abre la carpeta
+3. Busca el archivo `.md` relevante
 
-### Componentes de FTCLib
+### Método 4: Búsqueda de Texto
 
-- **[Hardware](./05_FTCLib/hardware.md)**
-  - Motor Groups
-  - Sensores
-  - Gyro
+Usa la función de Búsqueda de tu editor o visor de Markdown para encontrar términos específicos:
 
-- **[Controladores](./05_FTCLib/controladores.md)**
-  - PID Controller
-  - PIDF Controller (con Feedforward)
-
-- **[Command-Based Programming](./05_FTCLib/command-base.md)**
-  - Subsystems
-  - Commands
-  - Scheduler
-  - Ejemplos completos
-
-- **[Utilidades](./05_FTCLib/utilidades.md)**
-  - Timing (Timers)
-  - Range Clipping
-  - Math Utils
+- **VS Code**: `Ctrl+Shift+F` (Windows/Linux) o `Cmd+Shift+F` (Mac)
+- **GitHub**: Usa la barra de Búsqueda en el repositorio
+- **Obsidian**: `Ctrl+Shift+F` para Búsqueda global
 
 ---
 
-## 6. NextFTC - Framework Moderno
+## 📑 Contenido por Categoría
 
-### Framework Command-Based
+### Sistema de Control
+- Control Hub (Especificaciones, Configuración, IMU, firmware)
+- Expansion Hub (conexión RS485, alimentación)
+- Driver Station (interfaz, gamepads, telemetría)
+- Comunicaciones (Wi-Fi, optimización, troubleshooting)
 
-- **[Introducci�n a NextFTC](./06_NextFTC/introduccion-nextftc.md)**
-  - �Qu� es NextFTC?
-  - Instalaci�n (incluye PedroPathing y FTC Dashboard)
-  - Estructura b�sica (Comandos y Subsistemas)
-  - Recursos y comunidad
+### Programación
+- **Blocks**: Programación visual para principiantes
+- **OnBot Java**: Editor en navegador
+- **Android Studio**: IDE profesional
+- **Conceptos**: PID, state machines, Odometría, modos de conducción
 
-- **[Comandos y Subsistemas](./06_NextFTC/comandos-subsistemas.md)**
-  - Comandos secuenciales
-  - Comandos paralelos
-  - Grupos de comandos
+### Sistema Eléctrico
+- Baterías (tipos, carga, distribución)
+- Motores (tipos, encoders, modos de control)
+- Servos (estándar vs continuo)
+- Sensores (color, distancia, IMU, táctil)
 
-- **[Instalaci�n](./06_NextFTC/instalacion.md)**
-  - Configuraci�n de Gradle
-  - Verificaci�n de instalaci�n
-
----
-
-## 7. Pedro Pathing - Path Following
-
-### Navegaci�n Aut�noma Avanzada
-
-- **[Introducci�n a Pedro Pathing](./07_Pedro_Pathing/introduccion-pedro.md)**
-  - �Qu� es Pedro Pathing?
-  - Caracter�sticas (curvas de B�zier, PIDF, correcci�n centr�peta)
-  - Instalaci�n
-  - Configuraci�n b�sica (Follower, Paths, Update Loop)
-  - Path Types (Bezier Curve, Bezier Line)
-  - Path Actions (Heading, Velocidad)
-  - Ejemplo completo de Autonomous
-  - Tuning de constantes
-  - Visualizador web
-  - Comparaci�n con RoadRunner
-
-- **[Curvas de B�zier](./07_Pedro_Pathing/bezier-curves.md)**
-  - Tipos de curvas (L�nea, Cuadr�tica, C�bica)
-  - Puntos de control
-
-- **[Configuraci�n](./07_Pedro_Pathing/configuracion.md)**
-  - Configurar encoders de odometr�a
-  - Constantes del robot
-  - Tuning PID
+### Librerías Avanzadas
+- **FTCLib**: Hardware wrappers, PID, command-based
+- **NextFTC**: Framework moderno command-based
+- **Pedro Pathing**: Path following con curvas de Bézier
+- **Recursos Extra**: RoadRunner, EasyOpenCV, FTC Dashboard
 
 ---
 
-## 8. Recursos Adicionales
+## 💡 Consejos de Uso
 
-### Herramientas y Librer�as Complementarias
+### Para Leer en Computadora
 
-- **[RoadRunner](./08_Recursos_Adicionales/roadrunner.md)**
-  - Path following con splines
-  - Instalaci�n
-  - Recursos
+**Editores Recomendados:**
+- **VS Code** con extensión "Markdown Preview Enhanced"
+- **Obsidian** para vista de gráfico de conocimiento
+- **Typora** para edición WYSIWYG
+- **GitHub** (visualización web si está en repositorio)
 
-- **[EasyOpenCV](./08_Recursos_Adicionales/easycv.md)**
-  - Computer Vision en FTC
-  - Instalaci�n
-  - Ejemplo b�sico
-  - EOCV-Sim (simulador)
+### Para Leer en Tablet/Teléfono
 
-- **[FTC Dashboard](./08_Recursos_Adicionales/ftc-dashboard.md)**
-  - Telemetr�a avanzada en navegador
-  - Instalaci�n
-  - Uso b�sico
-  - Acceso web
-  - Caracter�sticas (gr�ficos, configuraci�n en vivo, visualizaci�n)
+**Apps Recomendadas:**
+- **Markor** (Android)
+- **iA Writer** (iOS)
+- **Obsidian** (iOS/Android)
+- Navegador web (si está en GitHub)
 
----
+### Para Imprimir
 
-## = Enlaces Oficiales
-
-### Recursos FIRST
-
-- **[FIRST Tech Challenge Official](https://www.firstinspires.org/programs/ftc/)** - Sitio oficial
-- **[FTC Documentation](https://ftc-docs.firstinspires.org/)** - Documentaci�n oficial
-- **[Game Manual](https://www.firstinspires.org/resource-library/ftc/game-and-season-info)** - Reglas del juego
-- **[GitHub FTC](https://github.com/FIRST-Tech-Challenge)** - SDK oficial
-- **[FTC SIM](https://ftcsim.org/)** - Simulador virtual
-
-### Comunidad y Recursos
-
-- **[Game Manual 0 (GM0)](https://gm0.org)** - Gu�a de la comunidad (altamente recomendado)
-- **[FTC Discord](https://discord.gg/first-tech-challenge)** - Comunidad activa
-- **[Chief Delphi - FTC](https://www.chiefdelphi.com/c/technical/first-tech-challenge/)** - Foro t�cnico
-- **[Reddit r/FTC](https://www.reddit.com/r/FTC/)** - Discusiones de equipos
-
-### Librer�as y Herramientas
-
-- **[FTCLib Docs](https://docs.ftclib.org/)** - Documentaci�n FTCLib
-- **[Pedro Pathing](https://pedropathing.com/)** - Docs y visualizador
-- **[FTC Dashboard](https://acmerobotics.github.io/ftc-dashboard/)** - Telemetr�a avanzada
-- **[RoadRunner](https://learnroadrunner.com/)** - Path following
+Recomendaciones:
+- Imprime secciones específicas según necesidad
+- Usa vista previa de Markdown para mejor formato
+- Considera exportar a PDF primero (VS Code → Markdown PDF)
 
 ---
 
-## =� Notas de Uso
+## 🔍 Buscar información Específica
 
-### Navegaci�n
+### Por Tema
 
-- Usa los hiperv�nculos para moverte entre secciones
-- Cada documento tiene enlaces de navegaci�n al final:
-  - **� Anterior**: Documento previo
-  - **� Siguiente**: Siguiente documento
-  - **� �ndice**: Volver a este �ndice
+| Busco información sobre... | Ir a... |
+|---------------------------|---------|
+| Configurar el Control Hub | [Sistema de Control → Control Hub](./02_Sistema_Control/control-hub.md) |
+| Programar en Blocks | [Programación → Blocks](./03_Programacion/blocks-programming.md) |
+| Instalar Android Studio | [Programación → Android Studio](./03_Programacion/android-studio.md) |
+| Control PID | [Programación → Conceptos Básicos](./03_Programacion/conceptos-basicos.md) |
+| Baterías y alimentación | [Sistema Eléctrico → alimentación](./04_Sistema_Electrico/alimentación.md) |
+| Usar FTCLib | [FTCLib → Introducción](./05_FTCLib/introduccion-ftclib.md) |
+| Path following | [Pedro Pathing → Introducción](./07_Pedro_Pathing/introduccion-pedro.md) |
+| Computer visión | [Recursos → EasyOpenCV](./08_Recursos_Adicionales/easycv.md) |
 
-### Actualizaciones
+### Por Problema
 
-Esta documentaci�n se basa en la temporada **2025-2026 (DECODE)**. Verifica siempre el Game Manual oficial para:
-- Reglas espec�ficas de la temporada
-- Hardware y software permitido
+| Tengo este problema... | Buscar en... |
+|----------------------|--------------|
+| Robot no conecta | [Comunicaciones](./02_Sistema_Control/comunicaciones.md) |
+| Motores no responden | [Sistema Eléctrico → Motores](./04_Sistema_Electrico/motores.md) |
+| OpMode no aparece en lista | [Estructura OpMode](./03_Programacion/estructura-opmode.md) |
+| Lag en controles | [Comunicaciones](./02_Sistema_Control/comunicaciones.md) o [Conceptos Básicos](./03_Programacion/conceptos-basicos.md) |
+| Batería se agota rápido | [alimentación](./04_Sistema_Electrico/alimentación.md) |
+
+---
+
+## 📚 Guías de Estudio Sugeridas
+
+### Plan de 4 Semanas (Principiante)
+
+**Semana 1: Fundamentos**
+- Día 1-2: ¿Qué es FTC? + Componentes Básicos
+- Día 3-5: Configuración Inicial
+- Día 6-7: Blocks Programming (ejemplos Básicos)
+
+**Semana 2: Sistema de Control**
+- Día 1-3: Control Hub + Driver Station
+- Día 4-5: Comunicaciones
+- Día 6-7: Práctica con Hardware real
+
+**Semana 3: Programación**
+- Día 1-2: OnBot Java
+- Día 3-4: Estructura OpMode
+- Día 5-7: Crear OpModes de TeleOp y Autonomous
+
+**Semana 4: Sistema Eléctrico**
+- Día 1-2: alimentación + Motores
+- Día 3-4: Servos + Sensores
+- Día 5-7: Integración completa
+
+### Plan de 2 Semanas (Intermedio/Avanzado)
+
+**Semana 1: Programación Avanzada**
+- Día 1-2: Android Studio setup
+- Día 3-4: Conceptos Básicos (PID, state machines)
+- Día 5-7: FTCLib integration
+
+**Semana 2: navegación Autónoma**
+- Día 1-3: Pedro Pathing
+- Día 4-5: Odometría
+- Día 6-7: Autonomous completo
+
+---
+
+## 🤝 Contribuir
+
+Esta documentación es un recurso educativo. Si encuentras errores o deseas contribuir:
+
+1. Reporta issues o errores
+2. Sugiere mejoras
+3. Comparte con otros equipos de FTC
+
+---
+
+## ℹ️ información Adicional
+
+### Versión de la Documentación
+
+- **Temporada**: 2025-2026 (DECODE)
+- **SDK Versión**: 9.0+
+- **Última Actualización**: Diciembre 2025
+
+### Compatibilidad
+
+está Documentación es compatible con:
+- Control Hub firmware 1.0+
+- FTC SDK 8.0+
+- Android Studio 2023.1+
+- Java 8+
+
+### Advertencias Importantes
+
+ **Siempre verifica el Game Manual oficial** para:
+- Reglas específicas de la temporada actual
+- Hardware y software permitido/prohibido
 - Restricciones de competencia
+- Cambios de último momento
 
-### Contribuciones
-
-Documentaci�n creada como recurso educativo para equipos de FTC de habla hispana.
-
----
-
-## =� Por D�nde Empezar
-
-### Nuevo en FTC
-1. [�Qu� es FTC?](./01_Introduccion/que-es-ftc.md)
-2. [Componentes B�sicos](./01_Introduccion/componentes-basicos.md)
-3. [Configuraci�n Inicial](./01_Introduccion/configuracion-inicial.md)
-4. [Blocks Programming](./03_Programacion/blocks-programming.md)
-
-### Equipo con Experiencia
-1. [Android Studio](./03_Programacion/android-studio.md)
-2. [Conceptos B�sicos de Programaci�n](./03_Programacion/conceptos-basicos.md)
-3. [FTCLib](./05_FTCLib/introduccion-ftclib.md)
-4. [Pedro Pathing](./07_Pedro_Pathing/introduccion-pedro.md)
-
-### Preparaci�n para Competencia
-1. [Sistema de Control](./02_Sistema_Control/control-hub.md)
-2. [Comunicaciones](./02_Sistema_Control/comunicaciones.md)
-3. [Sistema El�ctrico](./04_Sistema_Electrico/alimentacion.md)
-4. [Driver Station](./02_Sistema_Control/driver-station.md)
+ **Seguridad**: Nunca toques el robot mientras está encendido y en modo RUN
 
 ---
 
-**��xito en tu temporada de FTC!** ><�
+## = Enlaces rápidos
+
+### Documentación Oficial
+- [FIRST Tech Challenge](https://www.firstinspires.org/programs/ftc/)
+- [FTC Docs](https://ftc-docs.firstinspires.org/)
+- [Game Manual](https://www.firstinspires.org/resource-library/ftc/game-and-season-info)
+
+### Comunidad
+- [Game Manual 0](https://gm0.org)  Altamente recomendado
+- [FTC Discord](https://discord.gg/first-tech-challenge)
+- [Reddit r/FTC](https://www.reddit.com/r/FTC/)
+
+### Librerías
+- [FTCLib](https://docs.ftclib.org/)
+- [Pedro Pathing](https://pedropathing.com/)
+- [FTC Dashboard](https://acmerobotics.github.io/ftc-dashboard/)
 
 ---
 
-## Referencias
+##  Soporte
 
-Esta documentaci�n se compil� usando informaci�n de:
-- [FIRST Tech Challenge Official Documentation](https://ftc-docs.firstinspires.org/)
+¿Tienes preguntas que no está cubiertas en la Documentación?
+
+1. **Revisa el [Índice Principal](./INTRO_INDICE.md)** -Quizás está en otra seccin
+2. **Consulta Game Manual 0** - [gm0.org](https://gm0.org)
+3. **Pregunta en FTC Discord** - Comunidad muy activa
+4. **Revisa foros oficiales** - Chief Delphi, Reddit
+
+---
+
+##  Comienza Ahora
+
+** [Abre el Índice Principal (INTRO_INDICE.md)](./INTRO_INDICE.md)**
+
+---
+
+<div align="center">
+
+¡Éxito en tu temporada de FTC!** ><
+
+*Documentación creada para equipos de FTC de habla hispana*
+
+</div>
+
+---
+
+## 📄 Licencia
+
+Esta documentación es un recurso educativo compilado de fuentes públicas oficiales de FIRST Tech Challenge y la comunidad FTC.
+
+**Fuentes principales**:
+- [FTC Official Documentation](https://ftc-docs.firstinspires.org/)
 - [FTCLib Documentation](https://docs.ftclib.org/)
 - [Pedro Pathing Documentation](https://pedropathing.com/docs)
 - [Game Manual 0](https://gm0.org)
-- Experiencia de equipos de FTC
-- Investigaci�n de fuentes oficiales (2025)
-
-**Fuentes consultadas**:
-- [FIRST Tech Challenge Official](https://www.firstinspires.org/programs/ftc/)
-- [FTC Programming Resources](https://ftc-docs.firstinspires.org/en/latest/programming_resources/index.html)
-- [FTCLib GitHub](https://github.com/FTCLib/FTCLib)
-- [NextFTC GitHub](https://github.com/NextFTC/NextFTC)
-- [Pedro Pathing Official Site](https://pedropathing.com/)
 
 ---
 
-*�ltima actualizaci�n: Diciembre 2025*
+*Última Actualización: Diciembre 2025*
